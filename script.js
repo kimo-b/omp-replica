@@ -13,13 +13,18 @@ const tabs = [...document.querySelectorAll('.install-tab')];
 
 // Keep the compatibility strip useful in offline previews. The reference uses
 // provider PNGs; local copies are bundled for the five assets we ship, while
-// the remaining marks fall back to a quiet initial instead of a broken image.
-document.querySelectorAll('.provider[src^="http"]').forEach((image) => {
+// remote marks fall back to a quiet initial only when their image cannot load.
+const replaceProviderWithFallback = (image) => {
   const fallback = document.createElement('span');
   fallback.className = 'provider provider-fallback';
   fallback.textContent = (image.alt || '?').replace(/[^A-Za-z]/g, '').slice(0, 1).toUpperCase() || '?';
   fallback.setAttribute('title', image.title || image.alt || 'provider');
   image.replaceWith(fallback);
+};
+
+document.querySelectorAll('.provider[src^="http"]').forEach((image) => {
+  image.addEventListener('error', () => replaceProviderWithFallback(image), { once: true });
+  if (image.complete && image.naturalWidth === 0) replaceProviderWithFallback(image);
 });
 
 function selectMethod(method) {
