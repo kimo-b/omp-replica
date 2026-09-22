@@ -1,0 +1,9 @@
+{
+  "name": "omp-replica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A high-fidelity recreation of the omp landing page.",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
