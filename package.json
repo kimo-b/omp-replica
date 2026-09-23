@@ -1,9 +1,13 @@
 {
-  "name": "omp-replica",
+  "name": "blackbit-landing",
   "version": "1.0.0",
   "private": true,
-  "description": "A high-fidelity recreation of the omp landing page.",
+  "description": "Blackbit's authorized offensive-security product-family landing page.",
+  "dependencies": {
+    "three": "0.186.0"
+  },
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "test": "node --experimental-vm-modules --test tests/*.test.mjs"
   }
 }

@@ -1,97 +1,156 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A coding agent with the IDE wired in." />
-    <title>omp — a coding agent with the IDE wired in</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050608" />
+    <meta name="description" content="Blackbit brings security agents, an operator workspace, and model access together for authorized offensive-security work." />
+    <title>Blackbit — Authorized offensive security</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Martian+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
+    <noscript><style>.product-tabs{display:none}.product-panel{border-top:1px solid rgba(213,228,225,.19);margin-top:20px}</style></noscript>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div id="app">
-      <header class="site-header">
-        <div class="header-inner">
-          <a class="brand" href="#top" aria-label="omp home">
-            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="brand-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="oklch(0.7 0.24 340)"/><stop offset=".5" stop-color="oklch(0.62 0.21 295)"/><stop offset="1" stop-color="oklch(0.81 0.14 200)"/></linearGradient></defs><path fill="url(#brand-gradient)" d="M10 14h44v9H43v33h-9V23h-9v22h-9V23H10z"/></svg>
-            <span>omp</span>
-          </a>
-          <nav class="primary-nav" aria-label="Primary">
-            <a href="https://omp.sh/docs">docs</a>
-            <a href="https://discord.gg/4NMW9cdXZa" target="_blank" rel="noreferrer noopener" aria-label="Discord" class="icon-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.0777.0777 0 0 0-.0785-.037A19.7363 19.7363 0 0 0 3.6776 4.37a.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6303.8731-1.2952 1.226-1.9942a.0766.0766 0 0 0-.0416-.1057 12.2986 12.2986 0 0 1-1.8722-.8923.0777.0777 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.074.074 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1201.099.2461.1981.3728.2924a.0777.0777 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.0766.0766 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.0777.0777 0 0 0 .0313-.0552c.5004-5.177-.8382-9.7105-3.5556-13.6601a.0614.0614 0 0 0-.032-.0277ZM8.02 15.331c-1.182 0-2.157-.8969-2.157-2.0023 0-1.1053.9569-2.0023 2.157-2.0023 1.2092 0 2.1753.9048 2.157 2.0023 0 1.1054-.9569 2.0023-2.157 2.0023Zm7.963 0c-1.182 0-2.157-.8969-2.157-2.0023 0-1.1053.9569-2.0023 2.157-2.0023 1.2092 0 2.1753.9048 2.157 2.0023 0 1.1054-.9569 2.0023-2.157 2.0023Z"/></svg><span class="external">↗</span></a>
-            <a href="https://github.com/can1357/oh-my-pi" target="_blank" rel="noreferrer noopener" aria-label="GitHub" class="icon-link"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12Z"/></svg><span class="external">↗</span></a>
-          </nav>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="home-link" href="#top" aria-label="Blackbit, back to top">
+          <img src="/assets/blackbit-wordmark.svg" alt="Blackbit" width="155" height="20" />
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#system">System</a>
+          <a href="#zero" data-product-link="zero">Zero</a>
+          <a href="#void" data-product-link="void">VOID</a>
+          <a href="#bay" data-product-link="bay">Bay <span class="nav-soon">soon</span></a>
+        </nav>
+        <span class="header-index" aria-hidden="true">BB / 001</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="scope-still">
+            <span class="scope-line line-one"></span>
+            <span class="scope-line line-two"></span>
+            <span class="scope-line line-three"></span>
+            <span class="scope-line line-four"></span>
+            <span class="scope-line line-five"></span>
+            <span class="scope-frame"></span>
+            <span class="scope-trace"></span>
+          </div>
+          <canvas id="scope-canvas"></canvas>
+          <div class="scene-corner scene-corner-top"></div>
+          <div class="scene-corner scene-corner-bottom"></div>
         </div>
-      </header>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-marker"></span> BLACKBIT / AUTHORIZED OFFENSIVE SECURITY</p>
+            <h1 id="hero-title">Security agents<br />that act.<br /><span>Operators that decide.</span></h1>
+            <p class="hero-lead">Blackbit brings security agents, an operator workspace, and model access together for authorized offensive-security work.</p>
+            <a class="primary-action" href="#system"><span>Explore the Blackbit system</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-bottom" aria-hidden="true">
+            <span>ZERO &nbsp; / &nbsp; VOID &nbsp; / &nbsp; BAY</span>
+            <span>ILLUSTRATIVE FIELD / AUTHORIZED SCOPE</span>
+          </div>
+        </div>
+        <nav class="product-sidecar" aria-label="Product shortcuts">
+          <a href="#zero" data-product-link="zero"><span class="rail-num">01</span><span class="rail-name">ZERO</span></a>
+          <a href="#void" data-product-link="void"><span class="rail-num">02</span><span class="rail-name">VOID</span></a>
+          <a href="#bay" data-product-link="bay"><span class="rail-num">03</span><span class="rail-name">BAY</span></a>
+        </nav>
+      </section>
 
-      <main id="main">
-        <div class="hero-shell">
-          <canvas id="space-canvas" aria-hidden="true"></canvas>
-          <canvas id="noise-canvas" aria-hidden="true"></canvas>
-          <div class="scanlines" aria-hidden="true"></div>
+      <section class="system-section" id="system" aria-labelledby="system-title">
+        <div class="section-heading">
+          <p class="section-kicker"><span>01 / THE SYSTEM</span><span class="section-rule"></span></p>
+          <div class="section-heading-grid">
+            <h2 id="system-title">Three surfaces.<br /><span>One operating thesis.</span></h2>
+            <p>Zero is where the operator works. VOID connects security agents to model routes. Bay is the marketplace to come.</p>
+          </div>
+        </div>
 
-          <section id="top" class="hero-section">
-            <div class="hero-copy">
-              <p class="eyebrow sunray">omp², soon!</p>
-              <h1>
-                <span>A coding <span class="nowrap">agent</span></span>
-                <span class="muted">with the</span>
-                <span class="accent">IDE wired in<span class="fg">.</span></span>
-              </h1>
-              <p class="lede">An agentic harness with all you need built in, powered by a native Rust core, with every tool tuned against real sessions.<br />Windows-native, skip the <s>WSL.</s></p>
+        <div class="product-tabs" role="tablist" aria-label="Blackbit products">
+          <button type="button" id="tab-zero" role="tab" aria-selected="true" aria-controls="zero" tabindex="0" data-product-tab="zero"><span>01</span><strong>ZERO</strong><small>OPERATOR WORKSPACE</small></button>
+          <button type="button" id="tab-void" role="tab" aria-selected="false" aria-controls="void" tabindex="-1" data-product-tab="void"><span>02</span><strong>VOID</strong><small>MODEL GATEWAY</small></button>
+          <button type="button" id="tab-bay" role="tab" aria-selected="false" aria-controls="bay" tabindex="-1" data-product-tab="bay"><span>03</span><strong>BAY</strong><small>COMING SOON</small></button>
+        </div>
 
-              <section class="install-panel" aria-label="Install omp">
-                <div class="install-tabs" role="tablist" aria-label="Install method">
-                  <button class="install-tab active" role="tab" aria-selected="true" data-method="curl">curl</button>
-                  <button class="install-tab" role="tab" aria-selected="false" data-method="brew">brew</button>
-                  <button class="install-tab" role="tab" aria-selected="false" data-method="bun">bun</button>
-                  <button class="install-tab" role="tab" aria-selected="false" data-method="ps1">ps1</button>
-                  <button class="install-tab" role="tab" aria-selected="false" data-method="mise">mise</button>
-                  <span class="platform-label" id="platform-label">macOS · Linux</span>
-                </div>
-                <div class="command-bar">
-                  <span class="prompt-symbol" aria-hidden="true">$</span>
-                  <code id="command-text">curl -fsSL https://omp.sh/install | sh</code>
-                  <button id="copy-button" type="button" aria-label="Copy install command for curl"><span class="copy-label">copy</span><span class="copied-label">✓ copied</span></button>
-                </div>
-              </section>
-
-              <section class="compatible" aria-label="Compatible providers">
-                <p class="section-label">compatible</p>
-                <div class="provider-marquee">
-                  <div class="provider-track" id="provider-track"><div class="provider-set" aria-hidden="false"><img class="provider" src="/assets/meta.png" alt="Meta" title="Meta" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/deepseek/ffffff" alt="DeepSeek" title="DeepSeek" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/qwen/ffffff" alt="Qwen" title="Qwen" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/google/ffffff" alt="Google" title="Google" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" title="OpenAI" decoding="async" /><img class="provider" src="/assets/anthropic.png" alt="Anthropic" title="Anthropic" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/x/ffffff" alt="xAI" title="xAI" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/moonshot/ffffff" alt="Moonshot" title="Moonshot" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/zai/ffffff" alt="Z.ai" title="Z.ai" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/minimax/ffffff" alt="MiniMax" title="MiniMax" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/stepfun/ffffff" alt="StepFun" title="StepFun" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/groq/ffffff" alt="Groq" title="Groq" decoding="async" /><img class="provider" src="/assets/cerebras.png" alt="Cerebras" title="Cerebras" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/fireworks/ffffff" alt="Fireworks" title="Fireworks" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/together/ffffff" alt="Together" title="Together" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/openrouter/ffffff" alt="OpenRouter" title="OpenRouter" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/githubcopilot/ffffff" alt="GitHub Copilot" title="GitHub Copilot" decoding="async" /><img class="provider" src="/assets/huggingface.png" alt="Hugging Face" title="Hugging Face" decoding="async" /><img class="provider" src="/assets/amazon-bedrock.png" alt="Amazon Bedrock" title="Amazon Bedrock" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/microsoftazure/ffffff" alt="Azure" title="Azure" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/cohere/ffffff" alt="Cohere" title="Cohere" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/nvidia/ffffff" alt="NVIDIA" title="NVIDIA" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/ollama/ffffff" alt="Ollama" title="Ollama" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/llama/ffffff" alt="llama.cpp" title="llama.cpp" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/vllm/ffffff" alt="vLLM" title="vLLM" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/mistral/ffffff" alt="Mistral" title="Mistral" decoding="async" /></div><div class="provider-set" aria-hidden="true"><img class="provider" src="/assets/meta.png" alt="Meta" title="Meta" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/deepseek/ffffff" alt="DeepSeek" title="DeepSeek" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/qwen/ffffff" alt="Qwen" title="Qwen" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/google/ffffff" alt="Google" title="Google" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" title="OpenAI" decoding="async" /><img class="provider" src="/assets/anthropic.png" alt="Anthropic" title="Anthropic" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/x/ffffff" alt="xAI" title="xAI" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/moonshot/ffffff" alt="Moonshot" title="Moonshot" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/zai/ffffff" alt="Z.ai" title="Z.ai" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/minimax/ffffff" alt="MiniMax" title="MiniMax" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/stepfun/ffffff" alt="StepFun" title="StepFun" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/groq/ffffff" alt="Groq" title="Groq" decoding="async" /><img class="provider" src="/assets/cerebras.png" alt="Cerebras" title="Cerebras" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/fireworks/ffffff" alt="Fireworks" title="Fireworks" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/together/ffffff" alt="Together" title="Together" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/openrouter/ffffff" alt="OpenRouter" title="OpenRouter" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/githubcopilot/ffffff" alt="GitHub Copilot" title="GitHub Copilot" decoding="async" /><img class="provider" src="/assets/huggingface.png" alt="Hugging Face" title="Hugging Face" decoding="async" /><img class="provider" src="/assets/amazon-bedrock.png" alt="Amazon Bedrock" title="Amazon Bedrock" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/microsoftazure/ffffff" alt="Azure" title="Azure" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/cohere/ffffff" alt="Cohere" title="Cohere" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/nvidia/ffffff" alt="NVIDIA" title="NVIDIA" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/ollama/ffffff" alt="Ollama" title="Ollama" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/llama/ffffff" alt="llama.cpp" title="llama.cpp" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/vllm/ffffff" alt="vLLM" title="vLLM" decoding="async" /><img class="provider" src="https://cdn.simpleicons.org/mistral/ffffff" alt="Mistral" title="Mistral" decoding="async" /></div></div></div>
-                </div>
-              </section>
+        <div class="product-panels">
+          <article class="product-panel zero-panel" id="zero" role="tabpanel" aria-labelledby="tab-zero" tabindex="0" data-product-panel="zero">
+            <div class="panel-brand"><img src="/assets/blackbit-zero.svg" alt="Blackbit Zero" width="1173" height="124" /></div>
+            <div class="panel-body">
+              <div class="panel-main">
+                <p class="panel-index">01 / OPERATOR WORKSPACE</p>
+                <h3>The IDE for agent-led security work.</h3>
+                <p>Zero brings assets, agent sessions, and engagement artifacts into a security-focused workspace for authorized investigation. Local and cloud workflows are part of its development path.</p>
+                <a href="#approach" class="text-action">Explore the approach <span aria-hidden="true">↗</span></a>
+              </div>
+              <dl class="panel-facts">
+                <div><dt>ASSETS</dt><dd>Source, web, and Android entry points</dd></div>
+                <div><dt>WORK</dt><dd>Agent sessions in an operator workspace</dd></div>
+                <div><dt>RECORD</dt><dd>Engagement artifacts in view</dd></div>
+              </dl>
             </div>
-          </section>
+          </article>
 
-          <aside class="sidecar" aria-label="omp capabilities">
-            <button class="sidecar-item" type="button" aria-label="debugger" aria-pressed="false" data-sidecar="debugger"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><circle cx="12" cy="12" r="5"></circle><path d="M12 2v4m0 12v4M2 12h4m12 0h4"></path></svg><span class="side-number">01</span></button>
-            <button class="sidecar-item" type="button" aria-label="stream rules" aria-pressed="false" data-sidecar="stream rules"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><path d="M4 5h16M4 12h11M4 19h16"></path><circle cx="17" cy="12" r="2"></circle></svg><span class="side-number">02</span></button>
-            <button class="sidecar-item" type="button" aria-label="subagents" aria-pressed="false" data-sidecar="subagents"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="16" r="3"></circle><path d="m10 10 4 4M5 18c0-2 1.5-3 3-3m8-6c1.5 0 3 1 3 3"></path></svg><span class="side-number">03</span></button>
-            <button class="sidecar-item" type="button" aria-label="advisor" aria-pressed="false" data-sidecar="advisor"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"></path><path d="m9 12 2 2 4-4"></path></svg><span class="side-number">04</span></button>
-            <button class="sidecar-item" type="button" aria-label="collab" aria-pressed="false" data-sidecar="collab"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><circle cx="8" cy="10" r="3"></circle><circle cx="17" cy="9" r="2"></circle><path d="M3 20c.5-3.5 2.3-5 5-5s4.5 1.5 5 5m0-4c2.8-.2 4.5 1 5 3"></path></svg><span class="side-number">05</span></button>
-            <button class="sidecar-item" type="button" aria-label="web" aria-pressed="false" data-sidecar="web"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg><span class="side-number">06</span></button>
-            <button class="sidecar-item" type="button" aria-label="conflict resolution" aria-pressed="false" data-sidecar="conflict resolution"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><path d="M8 3v7a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3"></path><circle cx="8" cy="3" r="2"></circle><circle cx="16" cy="21" r="2"></circle></svg><span class="side-number">07</span></button>
-            <button class="sidecar-item" type="button" aria-label="codemod" aria-pressed="false" data-sidecar="codemod"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="side-icon"><path d="M5 5h6v6H5zM13 13h6v6h-6zM11 8h2m-7 5v-2m2 2h3m2-2v2"></path></svg><span class="side-number">08</span></button>
-          </aside>
+          <article class="product-panel void-panel" id="void" role="tabpanel" aria-labelledby="tab-void" tabindex="0" data-product-panel="void">
+            <div class="panel-brand"><img src="/assets/blackbit-void.svg" alt="Blackbit VOID" width="1173" height="124" /></div>
+            <div class="panel-body">
+              <div class="panel-main">
+                <p class="panel-index">02 / MODEL GATEWAY</p>
+                <h3>Model access for security agents.</h3>
+                <p>VOID is a gateway and console for model routes, API keys, and usage across security workflows. Each route has its own data-handling terms.</p>
+                <a href="#approach" class="text-action">Explore the approach <span aria-hidden="true">↗</span></a>
+              </div>
+              <dl class="panel-facts">
+                <div><dt>ACCESS</dt><dd>OpenAI-compatible API</dd></div>
+                <div><dt>CONTROL</dt><dd>Keys and usage</dd></div>
+                <div><dt>CHOICE</dt><dd>Route-specific handling</dd></div>
+              </dl>
+            </div>
+          </article>
 
-          <footer class="site-footer">
-            <a href="https://stencil.so/" target="_blank" rel="noreferrer noopener" class="stencil-link" aria-label="Stencil Labs"><svg class="stencil-mark" viewBox="42 6 116 176" width="17" height="26" aria-hidden="true"><defs><mask id="stencil-mark-local-slot"><rect width="200" height="200" fill="white"/><line x1="100" y1="14" x2="100" y2="186" stroke="black" stroke-width="28"/></mask></defs><g mask="url(#stencil-mark-local-slot)"><polygon points="100,45 150,70 100,95 50,70" fill="currentColor"/><polygon points="100,75 150,100 100,125 50,100" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/><polygon points="100,105 150,130 100,155 50,130" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/></g><line x1="100" y1="30" x2="100" y2="172" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="100" cy="26" r="9" fill="currentColor"/></svg><span>Stencil</span></a>
-            <p>STENCIL LABS, INC. © 2026</p>
-          </footer>
-
-          <section class="preview-overlay" id="preview-overlay" aria-hidden="true" aria-label="Session preview">
-            <video id="preview-video" aria-hidden="true" muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:4vmin;padding-top:80px;padding-bottom:64px;"></video>
-            <button class="preview-dismiss" id="preview-dismiss" type="button" aria-label="Close session preview" style="z-index:10;"></button>
-            <p class="preview-badge" style="top:80px;right:20px;"><span>live</span> · <strong id="preview-label">session</strong></p>
-          </section>
+          <article class="product-panel bay-panel" id="bay" role="tabpanel" aria-labelledby="tab-bay" tabindex="0" data-product-panel="bay">
+            <div class="panel-brand"><img src="/assets/blackbit-bay.svg" alt="Blackbit Bay" width="1173" height="124" /></div>
+            <div class="panel-body bay-body">
+              <div class="panel-main">
+                <p class="panel-index">03 / FUTURE MARKETPLACE</p>
+                <h3>COMING<br />SOON<span class="bay-period">.</span></h3>
+                <p>An authorized offensive-security marketplace, coming soon.</p>
+              </div>
+              <div class="bay-motif" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
         </div>
-      </main>
-    </div>
-    <script src="/script.js" defer></script>
+      </section>
+
+      <section class="approach-section" id="approach" aria-labelledby="approach-title">
+        <div class="approach-intro">
+          <p class="section-kicker">02 / OPERATING PRINCIPLE</p>
+          <h2 id="approach-title">Capability is only useful<br /><span>inside clear authority.</span></h2>
+          <p>Before an agent touches a target, the target, permitted actions, and oversight should be clear. The work should leave an inspectable record of what was attempted and found.</p>
+        </div>
+        <ol class="principle-list">
+          <li><span>01</span><strong>AUTHORIZATION</strong><p>Know who may test what.</p></li>
+          <li><span>02</span><strong>SCOPE</strong><p>Name assets, accounts, and limits.</p></li>
+          <li><span>03</span><strong>EXECUTION</strong><p>Put tools and models under operator control.</p></li>
+          <li><span>04</span><strong>EVIDENCE</strong><p>Keep findings reviewable and reproducible.</p></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top" aria-label="Blackbit, back to top"><img src="/assets/blackbit-wordmark.svg" alt="Blackbit" width="186" height="24" /></a>
+      <p>Built for authorized security work.</p>
+      <nav aria-label="Footer products"><a href="#zero" data-product-link="zero">Zero</a><a href="#void" data-product-link="void">VOID</a><a href="#bay" data-product-link="bay">Bay</a></nav>
+    </footer>
+
+    <div class="pointer-coordinate" aria-hidden="true"><span class="pointer-glyph">+</span> X <span id="pointer-x">050</span> / Y <span id="pointer-y">050</span></div>
+    <div class="pointer-crosshair" aria-hidden="true"></div>
+    <script type="module" src="/app.mjs"></script>
   </body>
 </html>
