@@ -9,9 +9,9 @@
   --hairline-light: rgba(10, 27, 31, .18);
   --lime: #b9ffa1;
   --blue: #3253ff;
-  --font-display: "Proto Mono", "Martian Mono", ui-monospace, SFMono-Regular, monospace;
-  --font-body: "Die Grotesk A", "IBM Plex Sans", system-ui, sans-serif;
-  --font-support: "Die Grotesk B", "IBM Plex Sans", system-ui, sans-serif;
+  --font-display: "Martian Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-support: "IBM Plex Sans", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }

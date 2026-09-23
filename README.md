@@ -17,8 +17,8 @@ Zero is presented as an agentic security workspace, VOID as a model gateway and 
 
 The animated field contains seeded, synthetic geometry. It does not receive or depict target data, model responses, engagement scope, or evidence. Touch, reduced-motion, save-data, and unavailable WebGL states retain a static composition and the same text content.
 
-## Brand-font delivery
+## Typography
 
-The intended hierarchy is Proto Mono for display and interface labels, Die Grotesk A for reading text, and Die Grotesk B for supporting statements. Proprietary font files are not included in this public source tree. The default preview uses Martian Mono and IBM Plex Sans fallbacks. Before presenting a deployed site as using the exact brand typography, the domain owner must verify the relevant webfont grants and serve authorized WOFF2 files for that domain; the deployed rendering must then be reviewed with those files loaded.
+Martian Mono is the display and interface face; IBM Plex Sans is the reading and supporting face. These are the approved public substitutes for the brand's Proto Mono and Die Grotesk roles. No proprietary font files are included in this public source tree. If licensed brand webfonts become available later, verify the covered domain and the correct webfont grants before serving them.
 
 The Zero, VOID, and Bay SVGs are the supplied brand lockups, kept unmodified. The compact header/footer wordmark uses the master portion of the supplied lockup without the product suffix.
