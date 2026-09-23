@@ -19,6 +19,6 @@ The animated field contains seeded, synthetic geometry. It does not receive or d
 
 ## Typography
 
-Martian Mono is the display and interface face; IBM Plex Sans is the reading and supporting face. These are the approved public substitutes for the brand's Proto Mono and Die Grotesk roles. No proprietary font files are included in this public source tree. If licensed brand webfonts become available later, verify the covered domain and the correct webfont grants before serving them.
+The intended brand hierarchy is Proto Mono for headers and interface labels, Die Grotesk A for body text, and Die Grotesk B for supporting statements. Martian Mono and IBM Plex Sans are technical fallbacks only. No proprietary font files are included in this public source tree, so a browser without the licensed faces installed or served will display the fallbacks. Exact public rendering requires webfont grants covering the eventual domain and the authorized WOFF2 files; the private organization repository alone does not establish those rights.
 
 The Zero, VOID, and Bay SVGs are the supplied brand lockups, kept unmodified. The compact header/footer wordmark uses the master portion of the supplied lockup without the product suffix.
